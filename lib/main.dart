@@ -11,7 +11,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'MVVM MVC Practice',
       home: Scaffold(
-        appBar: AppBar(title: const Text('MVVM MVC Practice')),
+        appBar: AppBar(
+          title: Center(
+            child: const Text(
+              'MVVM MVC Practice',
+              style: TextStyle(color: Colors.amber),
+            ),
+          ),
+        ),
         body: const Center(child: Text('Hello World')),
       ),
     );
