@@ -7,7 +7,7 @@ class AppRoutes {
     GetPage(
       name: RoutesName.SlashScreen,
       page: () => SlashScreen(),
-      transitionDuration: Duration(microseconds: 250),
+      transitionDuration: Duration(milliseconds: 50),
       transition: Transition.leftToRight,
     ),
   ];

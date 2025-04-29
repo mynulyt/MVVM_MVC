@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mvvm_mvc/res/getx_localaization/language.dart';
 import 'package:mvvm_mvc/res/routs/routes.dart';
 import 'package:mvvm_mvc/view/slash_screen.dart';
 
@@ -11,6 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      translations: Language(),
+      locale: Locale('en', 'US'),
+      fallbackLocale: Locale('en', 'US'),
       debugShowCheckedModeBanner: false,
       title: 'MVVM MVC Practice',
       home: Scaffold(
